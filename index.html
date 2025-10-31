@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnFlow | AI 맞춤형 학습 플랫폼</title>
+    <!-- 나중에 추가할 CSS 파일 링크 -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- 아이콘 사용을 위한 Font Awesome 라이브러리 (예시) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* 기본 스타일 예시: 가독성을 위해 간단한 스타일을 추가합니다. 실제 프로젝트에서는 별도 CSS 파일로 분리하세요. */
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; line-height: 1.6; color: #333; margin: 0; }
+        header, footer { background-color: #f8f9fa; padding: 1rem 5%; }
+        section { padding: 4rem 5%; border-bottom: 1px solid #eee; }
+        h1, h2, h3 { color: #111; }
+        .container { max-width: 1200px; margin: auto; }
+        .btn { display: inline-block; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; }
+        .btn-primary { background-color: #007bff; color: white; }
+        .btn-secondary { background-color: transparent; border: 1px solid #007bff; color: #007bff; }
+        nav a { margin: 0 15px; text-decoration: none; color: #555; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .card { border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; text-align: center; }
+        .pricing-table { border: 2px solid #007bff; } /* 강조 표시 예시 */
+    </style>
+</head>
+<body>
+
+    <!-- =======================
+    Header (상단 고정 헤더)
+    ======================== -->
+    <header class="site-header">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="#home" class="logo"><strong>LearnFlow</strong></a>
+            <nav class="main-nav">
+                <a href="#programs">프로그램</a>
+                <a href="#instructors">강사진</a>
+                <a href="#success-stories">성공 사례</a>
+                <a href="#pricing">요금제</a>
+            </nav>
+            <a href="#contact" class="btn btn-secondary">1:1 상담 신청</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- =======================
+        1. 메인 페이지 (Home)
+        ======================== -->
+        <section id="home">
+            <!-- Hero Section -->
+            <div class="hero-section" style="text-align: center; padding: 100px 0;">
+                <!-- 배경 영상은 CSS background-video 속성으로 추가 -->
+                <h1>당신의 속도로, 당신만의 길을</h1>
+                <h2>AI가 설계하는 가장 효율적인 학습 여정</h2>
+                <p>하루 30분, 3개월이면 충분합니다. 이직 성공률 87%의 비밀을 경험하세요.</p>
+                <a href="#pricing" class="btn btn-primary" style="margin-right: 10px;">7일 무료로 시작하기</a>
+                <a href="#" class="btn btn-secondary">내 학습 경로 미리보기</a>
+            </div>
+
+            <!-- 신뢰 지표 (Social Proof) -->
+            <div class="social-proof" style="text-align: center; padding: 2rem 0;">
+                <h3>누적 수강생 12,000명 | 평균 학습 완료율 94% | 이직 성공률 87%</h3>
+            </div>
+
+            <!-- 핵심 가치 소개 -->
+            <div class="core-values container">
+                <div class="grid-3">
+                    <div class="card">
+                        <i class="fas fa-brain fa-2x"></i>
+                        <h3>AI 학습 경로 최적화</h3>
+                        <p>당신의 목표까지 가장 빠른 길을 안내합니다.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-briefcase fa-2x"></i>
+                        <h3>실무 중심 프로젝트</h3>
+                        <p>포트폴리오가 되는 경험을 만듭니다.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-user-friends fa-2x"></i>
+                        <h3>1:1 전문가 멘토링</h3>
+                        <p>현직자의 지름길을 당신의 것으로 만드세요.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 학습 프로세스 -->
+            <div class="process container" style="text-align:center; padding-top: 4rem;">
+                 <h2>4단계면 충분합니다, 당신의 커리어 점프</h2>
+                 <p>AI 레벨 테스트 → 맞춤 경로 생성 → 실전 학습 & 멘토링 → 커리어 전환 성공</p>
+            </div>
+            
+            <!-- 최종 CTA -->
+            <div class="final-cta" style="background-color: #f1f1f1; text-align:center; padding: 3rem;">
+                <h2>지금 시작하면 첫 달 50% 할인!</h2>
+                <!-- JS로 타이머 기능 구현 필요 -->
+                <div id="countdown-timer">남은 시간: 02일 14:35:17</div>
+                <br>
+                <a href="#pricing" class="btn btn-primary">지금 혜택받고 시작하기</a>
+            </div>
+        </section>
+
+        <!-- =======================
+        2. 프로그램 소개 페이지
+        ======================== -->
+        <section id="programs" class="container">
+            <h2 style="text-align:center;">당신의 성장을 이끌 모든 프로그램</h2>
+            <!-- 카테고리 필터 -->
+            <div class="filters" style="text-align:center; margin-bottom: 2rem;">
+                <button>프로그래밍</button>
+                <button>데이터</button>
+                <button>AI/ML</button>
+                <button>디자인</button>
+                <button>비즈니스</button>
+            </div>
+            <!-- 코스 카드 그리드 -->
+            <div class="course-grid grid-3">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x150" alt="코스 썸네일" style="max-width:100%;">
+                    <h4>왕초보를 위한 Python 데이터 분석 실무</h4>
+                    <p>난이도: 초급 | 기간: 12주 | ★★★★☆ 4.8</p>
+                    <p>월 99,000원</p>
+                    <a href="#" class="btn btn-secondary">상세 보기</a>
+                </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/300x150" alt="코스 썸네일" style="max-width:100%;">
+                    <h4>React & Node.js 풀스택 개발자 과정</h4>
+                    <p>난이도: 중급 | 기간: 16주 | ★★★★★ 4.9</p>
+                    <p>월 149,000원</p>
+                    <a href="#" class="btn btn-secondary">상세 보기</a>
+                </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/300x150" alt="코스 썸네일" style="max-width:100%;">
+                    <h4>실무 UX/UI 디자인 포트폴리오 완성</h4>
+                    <p>난이도: 초중급 | 기간: 10주 | ★★★★★ 5.0</p>
+                    <p>월 129,000원</p>
+                    <a href="#" class="btn btn-secondary">상세 보기</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =======================
+        3. 강사 소개 페이지
+        ======================== -->
+        <section id="instructors" class="container">
+            <h2 style="text-align:center;">최고의 전문가들이 당신의 성장을 돕습니다</h2>
+            <div class="instructors-grid grid-3">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" alt="강사 사진" style="border-radius:50%;">
+                    <h4>김민준</h4>
+                    <p>네이버 AI 개발자</p>
+                    <span>#머신러닝 #추천시스템</span>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" alt="강사 사진" style="border-radius:50%;">
+                    <h4>이수현</h4>
+                    <p>카카오 데이터 사이언티스트</p>
+                    <span>#데이터분석 #SQL</span>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" alt="강사 사진" style="border-radius:50%;">
+                    <h4>박서연</h4>
+                    <p>토스 프로덕트 디자이너</p>
+                    <span>#UXUI #Figma</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- =======================
+        4. 성공 사례 페이지
+        ======================== -->
+        <section id="success-stories" class="container">
+            <h2 style="text-align:center;">당신의 미래가 될 이야기들</h2>
+            <div class="grid-3">
+                 <div class="card">
+                    <img src="https://via.placeholder.com/100" alt="수강생 사진" style="border-radius:50%;">
+                    <h4>최지우 (마케터 → 데이터 분석가)</h4>
+                    <p>"비전공자였던 제가 3개월 만에 IT 기업으로 이직할 수 있었던 건 LearnFlow의 맞춤형 커리큘럼 덕분이었어요."</p>
+                 </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/100" alt="수강생 사진" style="border-radius:50%;">
+                    <h4>강동원 (영업직 → 백엔드 개발자)</h4>
+                    <p>"매주 진행되는 1:1 멘토링이 없었다면 불가능했을 겁니다. 막막할 때마다 길을 잡아주셨어요."</p>
+                 </div>
+                 <div class="card">
+                    <img src="https://via.placeholder.com/100" alt="수강생 사진" style="border-radius:50%;">
+                    <h4>한효주 (주니어 개발자 → 시니어 개발자)</h4>
+                    <p>"실무 프로젝트 경험 덕분에 연봉 2,000만원을 올리며 성공적으로 이직했습니다. 최고의 투자였어요."</p>
+                 </div>
+            </div>
+        </section>
+
+        <!-- =======================
+        5. 요금제 페이지
+        ======================== -->
+        <section id="pricing" class="container">
+            <h2 style="text-align:center;">당신의 성장에만 집중하세요</h2>
+            <div class="pricing-grid grid-3">
+                <div class="card">
+                    <h3>Basic</h3>
+                    <h2>월 49,000원</h2>
+                    <ul>
+                        <li>기본 코스 접근</li>
+                        <li>주 1회 그룹 멘토링</li>
+                        <li>커뮤니티 접근</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Basic 플랜 시작</a>
+                </div>
+                <div class="card pricing-table">
+                    <span style="background-color: #007bff; color:white; padding: 5px; border-radius: 5px;">Most Popular</span>
+                    <h3>Pro</h3>
+                    <h2>월 99,000원</h2>
+                    <ul>
+                        <li><strong>전체 코스 무제한</strong></li>
+                        <li><strong>주 2회 1:1 멘토링</strong></li>
+                        <li><strong>프로젝트 리뷰</strong></li>
+                        <li>커뮤니티 접근</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Pro 플랜 시작</a>
+                </div>
+                <div class="card">
+                    <h3>Premium</h3>
+                    <h2>월 199,000원</h2>
+                    <ul>
+                        <li>모든 Pro 혜택 포함</li>
+                        <li><strong>취업 지원 프로그램</strong></li>
+                        <li><strong>이력서/포트폴리오 코칭</strong></li>
+                        <li>네트워킹 이벤트 초대</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary">Premium 플랜 시작</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =======================
+        6. 예약/문의 페이지
+        ======================== -->
+        <section id="contact" class="container">
+            <h2 style="text-align:center;">당신의 커리어 고민, 전문가와 함께 해결하세요</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <!-- 1:1 상담 예약 폼 -->
+                <div class="booking-form">
+                    <h3>1:1 맞춤 상담 예약</h3>
+                    <form>
+                        <div style="margin-bottom: 1rem;">
+                            <label for="name">이름</label><br>
+                            <input type="text" id="name" name="name" style="width:100%; padding: 8px;">
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <label for="email">이메일</label><br>
+                            <input type="email" id="email" name="email" style="width:100%; padding: 8px;">
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <label for="topic">관심 분야</label><br>
+                            <select id="topic" name="topic" style="width:100%; padding: 8px;">
+                                <option>프로그래밍</option>
+                                <option>데이터 분석</option>
+                                <option>UX/UI 디자인</option>
+                            </select>
+                        </div>
+                         <div style="margin-bottom: 1rem;">
+                            <label for="goal">학습 목표</label><br>
+                            <textarea id="goal" name="goal" rows="4" style="width:100%; padding: 8px;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">상담 예약 제출하기</button>
+                    </form>
+                </div>
+                <!-- 문의 채널 및 위치 정보 -->
+                <div class="contact-info">
+                    <h3>즉시 문의하기</h3>
+                    <a href="#" class="btn btn-primary" style="background-color: #FEE500; color: #191919;">
+                        <i class="fas fa-comment"></i> 카카오톡 채널로 1:1 문의
+                    </a>
+                    <h3 style="margin-top: 2rem;">오시는 길</h3>
+                    <p>서울시 강남구 테헤란로 123, 45층 LearnFlow (방문 상담은 예약 필수)</p>
+                    <!-- 카카오맵 API 임베드 영역 -->
+                    <div id="map" style="width:100%; height:250px; background-color: #ddd;">지도 표시 영역</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =======================
+    Footer
+    ======================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 LearnFlow Inc. All rights reserved.</p>
+            <p>
+                <a href="#">이용약관</a> | <a href="#">개인정보처리방침</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
